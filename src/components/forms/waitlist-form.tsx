@@ -37,7 +37,7 @@ export function WaitlistForm() {
       },
       body: JSON.stringify(values),
     });
-    const data = await response.json();
+    const data = (await response.json()) as { message: string };
 
     if (data.message === "success") {
       toast.success("Thanks for your support!", {

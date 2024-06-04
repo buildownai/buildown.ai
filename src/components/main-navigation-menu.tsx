@@ -2,15 +2,14 @@ import * as React from "react";
 
 import { Badge } from "@/components/ui/badge";
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuItem,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { navMenuConfig } from "@/config/nav-menu";
-import { Icons } from "@/icons";
 import { cn } from "@/lib/utils";
 import type { MenuItem } from "@/types";
 
@@ -127,7 +126,7 @@ const ListItem: React.FC<MenuItem> = ({
           "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
           disabled
             ? "text-muted-foreground hover:bg-transparent hover:text-muted-foreground"
-            : ""
+            : "",
         )}
       >
         <div className="flex items-center text-sm font-medium leading-none">
