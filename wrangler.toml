@@ -1,7 +1,13 @@
-# wrangler.toml
-node_compat = true
+#:schema node_modules/wrangler/config-schema.json
+name = "buildownai"
+compatibility_date = "2024-06-03"
+pages_build_output_dir = "./dist"
+
 
 [[d1_databases]]
-binding = "DB" # i.e. available in your Worker on env.DB
+binding = "DB"                                       # i.e. available in your Worker on env.DB
 database_name = "buildownai-waitlist"
 database_id = "d4ba8b5d-3508-4a24-ba04-3fa44a6b585a"
+
+[vars]
+NUXT_RESEND_TOKEN = "re_exB455b5_Lg5ZzzV9sWomr6SoXKXnSFYD"
