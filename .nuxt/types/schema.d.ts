@@ -359,7 +359,7 @@ declare module 'nuxt/schema' {
 
       defaultLocale: any,
 
-      integrity: any,
+      integrity: number,
 
       experimental: {
          stripQueryParameters: boolean,
@@ -496,26 +496,6 @@ declare module 'nuxt/schema' {
 
          exclude: Array<number>,
       },
-   },
-
-   "nuxt-link-checker": {
-      version: string,
-
-      hasSitemapModule: boolean,
-
-      rootDir: string,
-
-      isNuxtContentDocumentDriven: boolean,
-
-      excludeLinks: Array<any>,
-
-      skipInspections: Array<any>,
-
-      fetchTimeout: number,
-
-      showLiveInspections: boolean,
-
-      fetchRemoteUrls: boolean,
    },
   }
 }

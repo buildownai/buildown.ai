@@ -15,14 +15,8 @@ declare module 'nitropack' {
     '/api/_mdc/highlight': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/highlighter/event-handler').default>>>>
     }
-    '/__site-config__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-site-config/dist/runtime/nitro/routes/__site-config__/debug').default>>>>
-    }
     '/__sitemap__/nuxt-content-urls.json': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/__sitemap__/nuxt-content-urls').default>>>>
-    }
-    '/__sitemap__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/__sitemap__/debug').default>>>>
     }
     '/__sitemap__/style.xsl': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/sitemap.xsl').default>>>>
@@ -36,21 +30,6 @@ declare module 'nitropack' {
     '/__robots__/nuxt-content.json': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/nuxt-content').default>>>>
     }
-    '/__robots__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/debug').default>>>>
-    }
-    '/__robots__/debug-path.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/debug-path').default>>>>
-    }
-    '/__link-checker__/inspect': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/inspect').default>>>>
-    }
-    '/__link-checker__/links': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/links').default>>>>
-    }
-    '/__link-checker__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/debug').default>>>>
-    }
     '/_turnstile/validate': {
       'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/turnstile/dist/runtime/nitro/validate.post').default>>>>
     }
@@ -63,10 +42,10 @@ declare module 'nitropack' {
     '/api/_content/query': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
-    '/api/_content/cache.json': {
+    '/api/_content/cache.1717780466471.json': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>>>
     }
-    '/api/_content/search': {
+    '/api/_content/search-1717780466471': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/search').default>>>>
     }
     '/api/_content/navigation/:qid/**:params': {
