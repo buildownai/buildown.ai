@@ -8,6 +8,3 @@ pages_build_output_dir = "./dist"
 binding = "DB"                                       # i.e. available in your Worker on env.DB
 database_name = "buildownai-waitlist"
 database_id = "d4ba8b5d-3508-4a24-ba04-3fa44a6b585a"
-
-[vars]
-NUXT_RESEND_TOKEN = "re_exB455b5_Lg5ZzzV9sWomr6SoXKXnSFYD"
