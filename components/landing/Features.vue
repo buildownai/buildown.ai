@@ -3,37 +3,37 @@ const features = [
     {
         title: "Basic Understanding",
         description:
-            "The real basics explained simple. Learn the terms and meanings, and get a solid knowldge foundation.",
+            "Get a clear understanding of essential terms and meanings. Build a strong knowledge foundation with our easy-to-follow explanations.",
         icon: "la:brain",
     },
     {
         title: "Running LLM´s local",
         description:
-            "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-        icon: "bx:bxs-window-alt",
+            "Learn how to run Large Language Models on your own device for full control, enhanced privacy, and improved performance.",
+        icon: "carbon:laptop",
     },
     {
         title: "Prompt Engeneering",
         description:
-            "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
-        icon: "bx:bxs-data",
+            "Gain the knowledge to interact with your GPT. Learn how your input shapes the responses from a Large Language Model.",
+        icon: "tabler:prompt",
     },
     {
         title: "Basics of Finetuning",
         description:
-            "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-        icon: "bx:bxs-bot",
+            "Learn to customize Large Language Models for your specific tasks, optimizing performance and tailoring responses to your needs.",
+        icon: "carbon:tuning",
     },
     {
         title: "RAG",
         description:
-            "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+            "Expand your model's capabilities with Retrieval-Augmented Generation (RAG). Integrate vector databases and document retrieval to provide accurate and context-rich responses..",
         icon: "bx:bxs-data",
     },
     {
         title: "Function Calling & Agents",
         description:
-            "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+            "Take your AI to the next level by adding tools and creating smart agents for your GPT. Enjoy benefits like improved functionality, greater efficiency, and more personalized interactions.",
         icon: "bx:bxs-bot",
     },
 ];
@@ -54,10 +54,13 @@ const features = [
                     Who Is This Book For?
                 </h2>
                 <p class="mb-6 font-light md:text-lg">
-                    Flowbite helps you connect with friends and communities of
-                    people who share your interests. Connecting with your
-                    friends and family as well as discovering new ones is easy
-                    with features like Groups.
+                    This book is written by a coder for coders and reflects the
+                    my own learning process. It's perfect for absolute
+                    beginners, those with some existing knowledge, and
+                    enthusiasts alike. While it's not designed for scientists,
+                    it caters to everyone else looking to deepen their
+                    understanding and skills in coding with large language
+                    models.
                 </p>
                 <a
                     href="#"
@@ -90,10 +93,11 @@ const features = [
                     What Does the Book Include?
                 </h2>
                 <p class="mb-6 font-light md:text-lg">
-                    Flowbite helps you connect with friends and communities of
-                    people who share your interests. Connecting with your
-                    friends and family as well as discovering new ones is easy
-                    with features like Groups.
+                    You can preview the entire book, with each chapter
+                    summarized to give you a clear overview of the content. This
+                    allows you to understand what each section covers before
+                    diving into the full details. Enjoy a thorough preview and
+                    see how the book can benefit you.
                 </p>
                 <a
                     href="/book"
@@ -119,6 +123,49 @@ const features = [
                 src="/assets/img/book_content.webp"
                 alt="dashboard image"
             />
+        </div>
+    </section>
+
+    <section>
+        <div
+            class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+            <img
+                class="w-full scroll-animate fade-from-left"
+                src="/assets/img/book_content.webp"
+                alt="dashboard image"
+            />
+            <div class="mt-4 md:mt-0 scroll-animate fade-from-right">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold">
+                    Why Should I Buy the Book?
+                </h2>
+                <p class="mb-6 font-light md:text-lg">
+                    While there's a wealth of material available, such as blogs,
+                    Python playbooks, and videos, it's often difficult and
+                    time-consuming to find and organize the information in the
+                    right order. This book offers a structured and comprehensive
+                    guide, saving you time and effort by presenting everything
+                    you need in a clear, logical sequence.
+                </p>
+                <a
+                    href="/book/buy"
+                    class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+                >
+                    Get the Book
+                    <svg
+                        class="ml-2 -mr-1 w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 

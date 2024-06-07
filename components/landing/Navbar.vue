@@ -9,11 +9,13 @@ const menuitems = [
                 path: "/book/buy",
                 description:
                     "Buy the book at this website or at your preffered book store",
+                icon: "carbon:store",
             },
             {
                 title: "What is included?",
                 path: "/book",
                 description: "View the summerized content of the book",
+                icon: "carbon:book",
             },
         ],
     },
@@ -113,7 +115,14 @@ const open = ref(false);
                                                     :href="sub.path"
                                                     class="block w-52 text-gray-600 hover:text-gray-900"
                                                 >
-                                                    <div class="text-black">
+                                                    <div
+                                                        class="text-black mb-1"
+                                                    >
+                                                        <Icon
+                                                            v-if="sub.icon"
+                                                            :name="sub.icon"
+                                                            class="inline-block text-xl mr-1"
+                                                        />
                                                         {{ sub.title }}
                                                     </div>
                                                     <div

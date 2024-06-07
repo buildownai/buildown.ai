@@ -108,7 +108,7 @@
         "./tailwind.config/*"
       ],
       "#app-manifest": [
-        "./manifest/meta/cf8ab284-9d98-4c81-9025-893a9a10ecf5.json"
+        "./manifest/meta/dev.json"
       ],
       "#build": [
         "."
@@ -173,6 +173,7 @@
     "../node_modules/@nuxtjs/turnstile/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
-    "../dist"
+    "../dist",
+    "../.output"
   ]
 }
