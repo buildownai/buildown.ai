@@ -29,16 +29,15 @@ definePageMeta({
       <section>
         <div
           class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-          <img class="w-full scroll-animate fade-from-left" src="/assets/img/book_content.webp" alt="dashboard image" />
+          <img class="w-full scroll-animate fade-from-left" src="/assets/img/buddy_splah.webp" alt="dashboard image" />
           <div class="mt-4 md:mt-0 scroll-animate fade-from-right">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold">
               Is This A Real Application?
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              This is a real showcase application, with available source code, but being fare from production ready. It
-              shows what <strong>You</strong> will be
-              able to implement, with the knowledge from this book.
-              It is playground for developers and people interested in trying out cool stuff.
+              This is a showcase application with accessible source code, though not yet production-ready. It
+              demonstrates what you’ll be able to implement with the knowledge gained from this book. It’s a playground
+              for developers and anyone curious to experiment with innovative ideas.
             </p>
             <a href="#"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -63,11 +62,10 @@ definePageMeta({
               Do I Need To Buy The Book To Get The Code?
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              The code is open-source and available on GitHub. You don't need to buy the book to access it.
-              However, in the repository you will not find any documentation or explanations about how to use the code.
-              If you want to understand how the code works, I recommend reading the book.
-              It would also be a nice gesture, to give a little support by buying the book, as it helps me continue
-              creating content like this one.
+              The code is open-source and available on GitHub, with no purchase required to access it. However, the
+              repository does not include documentation or explanations on how to use the code. To fully understand its
+              functionality, I recommend reading the book. Purchasing the book is also a great way to show support,
+              helping me continue creating content like this.
             </p>
             <a href="https://github.com/buildownai/buddy" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">

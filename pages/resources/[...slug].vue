@@ -20,8 +20,8 @@ definePageMeta({
               Source Code From The Book
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              The source code for each chapter is public available on GitHub. Here you will find the complete code to be
-              able to run it on your local machine, to extend the code and play around.
+              The source code for each chapter is publicly available on GitHub. There, you’ll find the complete code,
+              allowing you to run it locally, extend it, and experiment on your own.
             </p>
             <a href="https://github.com/buildownai/book_code_examples" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -46,8 +46,8 @@ definePageMeta({
               Where Can I Find The Buddy Showcase?
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              The source code is open-source and available on GitHub. You can simply clone the code to your local
-              machine and run it.
+              The source code is open-source and available on GitHub. Simply clone it to your local machine and start
+              running it.
             </p>
             <a href="https://github.com/buildownai/buddy" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -76,8 +76,8 @@ definePageMeta({
               The Docker for Models
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              We only scratched on top of the potential of SurrealDB. If you like to learn more about it, visit our
-              official website. There, you will find a comprehensive documentation and interasting material.
+              Ollama makes running models easy with an OpenAI-compatible API. If you're familiar with Docker, you'll
+              find there’s almost no learning curve.
             </p>
             <a href="https://ollama.com" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -101,9 +101,9 @@ definePageMeta({
               Run & Test Models
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              When you work with LLM´s local, LM Studio is the perfect tool to manage and control your models. It
-              provides a user-friendly interface that allows you to easily run and test models. Furthermore, it provides
-              a OpenAI compatible webserver.
+              When working with local LLMs, LM Studio is the perfect tool for managing and controlling your models. It
+              offers a user-friendly interface for easily running and testing models and includes an OpenAI-compatible
+              web server.
             </p>
             <a href="https://lmstudio.ai" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -128,8 +128,8 @@ definePageMeta({
               The Multi-Model Database
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              We only scratched on top of the potential of SurrealDB. If you like to learn more about it, visit our
-              official website. There, you will find a comprehensive documentation and interasting material.
+              We've only scratched the surface of SurrealDB's potential. To learn more, visit our official website,
+              where you'll find comprehensive documentation and engaging materials.
             </p>
             <a href="https://surrealdb.com" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -152,7 +152,7 @@ definePageMeta({
               <img src="/logos/bun.svg" style="height:35px; display: inline-block; margin-right: 10px;" /> Bun
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              Bun is a modern, fast runtime and package manger for JavaScript and Typescript
+              Bun is a modern, fast runtime and package manager for JavaScript and TypeScript.
             </p>
             <a href="https://bun.sh" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -170,7 +170,8 @@ definePageMeta({
               <img src="/logos/hono.svg" style="height:35px; display: inline-block; margin-right: 10px;" /> Hono
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              Hono is a modern web application framework built on Web Standards, with a great developer experience
+              Hono is a modern web application framework built on web standards, designed to provide an excellent
+              developer experience.
             </p>
             <a href="https://hono.dev" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
@@ -196,9 +197,8 @@ definePageMeta({
               Models And More
             </h2>
             <p class="mb-6 font-light md:text-lg">
-              We only scratched on top of the potential of SurrealDB. If you like to learn more about it, visit our
-              official website. There, you will find a comprehensive documentation and interasting material.
-            </p>
+              Hugging Face is the number one go-to hub for AI models, training data, and all things machine learning.
+              Here, you’ll find some of the best models available. </p>
             <a href="https://huggingface.co/" target="_blank"
               class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
               huggingface.co

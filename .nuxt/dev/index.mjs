@@ -224,8 +224,6 @@ const _inlineRuntimeConfig = {
       },
       "navigation": {
         "fields": [
-          "layout",
-          "layout",
           "layout"
         ]
       },
@@ -427,8 +425,6 @@ const _inlineRuntimeConfig = {
     },
     "navigation": {
       "fields": [
-        "layout",
-        "layout",
         "layout"
       ]
     },
@@ -565,8 +561,6 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
-      "/sitemap.xml",
-      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "robotsEnabledValue": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -593,8 +587,6 @@ const _inlineRuntimeConfig = {
       }
     ],
     "sitemap": [
-      "/sitemap.xml",
-      "/sitemap.xml",
       "/sitemap.xml"
     ],
     "robotsEnabledValue": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
