@@ -1,32 +1,22 @@
 <template>
-    <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
-        <div class="p-24 md:order-1 hidden md:block">
-            <div class="hover-animate">
-                <img
-                    class="fly-in"
-                    src="~/assets/img/hero.png"
-                    alt="Build Your Own AI Book"
-                    loading="eager"
-                    width="512"
-                    height="512"
-                />
-            </div>
-        </div>
+  <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+    <div class="p-24 md:order-1 hidden md:block">
+      <div class="hover-animate">
+        <img class="fly-in" src="~/assets/img/hero.png" alt="Build Your Own AI Book" loading="eager" width="512"
+          height="512" />
+      </div>
+    </div>
 
-        <div>
-            <h1
-                class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight"
-            >
-                <span class="text-blue-800">Build</span> Your Own
-                <span class="text-blue-800">AI</span>
-            </h1>
-            <p class="text-lg mt-4 text-slate-600 max-w-xl">
-                Master the Art of Building Your Own GPT-like AI:<br />
-                A Practical Guide to Understanding and Customizing Large
-                Language Models with RAG and Function Calling
-            </p>
-            <LandingWaitlist></LandingWaitlist>
-            <!--
+    <div>
+      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
+        <span class="text-blue-800">Build</span> Your Own
+        <span class="text-blue-800">AI</span>
+      </h1>
+      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+        Practical Insights for Building Real-World AI Applications:<br/>A Developer’s Guide for Developers
+      </p>
+      <LandingWaitlist></LandingWaitlist>
+      <!--
             <div class="mt-6 flex flex-col sm:flex-row gap-3">
                 <LandingLink
                     href="https://github.com/Gr33nW33n/nuxtship-template"
@@ -44,8 +34,8 @@
                 >
             </div>
             -->
-        </div>
-    </main>
+    </div>
+  </main>
 </template>
 
 <style scoped>

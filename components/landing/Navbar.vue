@@ -3,29 +3,27 @@ const menuitems = [
     {
         title: "The Book",
         path: "/",
-        children: [
-            {
-                title: "Get The Book",
-                path: "/book/buy",
-                description:
-                    "Buy the book at this website or at your preffered book store",
-                icon: "carbon:store",
-            },
-            {
-                title: "What is included?",
-                path: "/book",
-                description: "View the summerized content of the book",
-                icon: "carbon:book",
-            },
-        ],
     },
     {
-        title: "News",
-        path: "/news",
+      title: "Buy",
+      path: "/buy",
+      description:
+        "Buy the book at this website or at your preferred book store",
+      icon: "carbon:store",
     },
     {
-        title: "Resources",
-        path: "/resources",
+      title: "Preview",
+      path: "/book",
+      description: "View the summarized content of the book",
+      icon: "carbon:book",
+    },
+    {
+      title: "Showcase",
+      path: "/showcase",
+    },
+    {
+      title: "Resources",
+      path: "/resources",
     },
 ];
 
@@ -90,12 +88,7 @@ const open = ref(false);
                                 <a
                                     :href="item.path"
                                     class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
-                                    :class="
-                                        item.path.startsWith(routePath) &
-                                            (routePath !== '/') ||
-                                        (routePath.startsWith('/book') &&
-                                            item.path === '/') ||
-                                        routePath === item.path
+                                    :class="routePath === item.path
                                             ? 'font-bold border-b-2 border-slate-600'
                                             : ''
                                     "

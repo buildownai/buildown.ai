@@ -1,7 +1,7 @@
 <template>
     <aside v-if="enabled">
         <!-- <LandingSearch></LandingSearch> -->
-        <nav class="pt-20">
+        <nav class="md:pt-20">
             <ul>
                 <li v-for="link in tree" :key="link.id" class="mt-2">
                     <NuxtLink
@@ -15,12 +15,12 @@
                     >
                         {{ link.title }}
                     </NuxtLink>
-                    <ul v-if="link.children" class="mt-2">
+                    <ul v-if="link.children" class="mt-1">
                         <template v-for="child in link.children">
-                            <li v-if="child._path !== link._path" class="mt-2">
+                            <li v-if="child._path !== link._path" class="mt-1">
                                 <NuxtLink
                                     :to="child._path"
-                                    class="block pl-5 hover:font-semibold"
+                                    class="block pl-2 hover:font-semibold"
                                     :class="
                                         path === child._path
                                             ? 'font-bold text-sky-950 hover:text-sky-950'

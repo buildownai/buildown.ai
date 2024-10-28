@@ -13,16 +13,16 @@ const features = [
         icon: "carbon:laptop",
     },
     {
-        title: "Prompt Engeneering",
+        title: "Prompt Engineering",
         description:
-            "Gain the knowledge to interact with your GPT. Learn how your input shapes the responses from a Large Language Model.",
+            "Gain the knowledge to interact with your model. Learn how your input shapes the responses from a Large Language Model.",
         icon: "tabler:prompt",
     },
     {
-        title: "Basics of Finetuning",
-        description:
-            "Learn to customize Large Language Models for your specific tasks, optimizing performance and tailoring responses to your needs.",
-        icon: "carbon:tuning",
+      title: "Data Extration & Creation",
+      description:
+        "Get the knowledge to use LLMs for data extraction and creation, such as summarization, translation, and more.",
+      icon: "carbon:chart-logistic-regression",
     },
     {
         title: "RAG",
@@ -31,10 +31,22 @@ const features = [
         icon: "bx:bxs-data",
     },
     {
-        title: "Function Calling & Agents",
+        title: "Tool Calling",
         description:
-            "Take your AI to the next level by adding tools and creating smart agents for your GPT. Enjoy benefits like improved functionality, greater efficiency, and more personalized interactions.",
-        icon: "bx:bxs-bot",
+            "Take your AI to the next level by adding tools. Enjoy benefits like improved functionality, greater efficiency, and more personalized interactions.",
+        icon: "carbon:ai-launch",
+    },
+    {
+      title: "Agents",
+      description:
+        "We will figure out on how we can building complex scenarios with agents.",
+      icon: "bx:bxs-bot",
+    },
+    {
+      title: "Basics of Finetuning",
+      description:
+        "Learn to customize Large Language Models for your specific tasks, by adding and improving the knowledge of the model.",
+      icon: "carbon:tuning",
     },
 ];
 </script>
@@ -46,7 +58,7 @@ const features = [
         >
             <img
                 class="w-full scroll-animate fade-from-left"
-                src="/assets/img/book_content.webp"
+                src="/assets/img/developers.webp"
                 alt="dashboard image"
             />
             <div class="mt-4 md:mt-0 scroll-animate fade-from-right">
@@ -54,7 +66,7 @@ const features = [
                     Who Is This Book For?
                 </h2>
                 <p class="mb-6 font-light md:text-lg">
-                    This book is written by a coder for coders and reflects the
+                    This book is written by a developer for developers and reflects
                     my own learning process. It's perfect for absolute
                     beginners, those with some existing knowledge, and
                     enthusiasts alike. While it's not designed for scientists,
@@ -63,7 +75,7 @@ const features = [
                     models.
                 </p>
                 <a
-                    href="#"
+                    href="/book"
                     class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
                 >
                     Get started
@@ -88,6 +100,11 @@ const features = [
         <div
             class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
         >
+            <img
+                class="w-full scroll-animate fade-from-right md:order-last"
+                src="/assets/img/book_content.webp"
+                alt="dashboard image"
+            />
             <div class="mt-4 md:mt-0 scroll-animate fade-from-left">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold">
                     What Does the Book Include?
@@ -118,11 +135,6 @@ const features = [
                     </svg>
                 </a>
             </div>
-            <img
-                class="w-full scroll-animate fade-from-right"
-                src="/assets/img/book_content.webp"
-                alt="dashboard image"
-            />
         </div>
     </section>
 
@@ -132,7 +144,7 @@ const features = [
         >
             <img
                 class="w-full scroll-animate fade-from-left"
-                src="/assets/img/book_content.webp"
+                src="/assets/img/buy.webp"
                 alt="dashboard image"
             />
             <div class="mt-4 md:mt-0 scroll-animate fade-from-right">
@@ -148,7 +160,7 @@ const features = [
                     you need in a clear, logical sequence.
                 </p>
                 <a
-                    href="/book/buy"
+                    href="/buy"
                     class="inline-flex items-center text-primary bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
                 >
                     Get the Book
@@ -196,7 +208,7 @@ const features = [
     </div>
 </template>
 
-<style scoped>
+<style>
 @keyframes animate-fade {
     from {
         opacity: 0;

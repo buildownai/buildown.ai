@@ -19,16 +19,6 @@ declare module 'h3' {
   }
 }
 
-declare module 'nuxt/schema' {
-  interface AppConfigInput {
-    /** Theme configuration */
-    site?: import('../../node_modules/nuxt-site-config/dist/runtime/types').SiteConfigInput
-  }
-  interface Nuxt {
-    _siteConfig?: import('../../node_modules/nuxt-site-config/dist/runtime/types').SiteConfigStack
-  }
-}
-
 declare module '@nuxt/schema' {
   interface AppConfigInput {
     /** Theme configuration */

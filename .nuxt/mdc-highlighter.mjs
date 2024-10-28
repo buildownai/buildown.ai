@@ -1,31 +1,39 @@
 import { getMdcConfigs } from '#mdc-configs'
-import { getHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } from "shiki/core";
-import {
-  transformerNotationDiff,
-  transformerNotationErrorLevel,
-  transformerNotationFocus,
-  transformerNotationHighlight
-} from "@shikijs/transformers";
+import { createWasmOnigEngine } from 'shiki/engine/oniguruma'
 export function createShikiHighlighter({
   langs = [],
   themes = [],
   bundledLangs = {},
   bundledThemes = {},
   getMdcConfigs,
-  options: shikiOptions
+  options: shikiOptions,
+  engine
 } = {}) {
   let shiki;
   let configs;
   async function _getShiki() {
-    const shiki2 = await getHighlighterCore({
+    const { createHighlighterCore, addClassToHast, isSpecialLang, isSpecialTheme } = await import("shiki/core");
+    const { transformerNotationDiff, transformerNotationErrorLevel, transformerNotationFocus, transformerNotationHighlight } = await import("@shikijs/transformers");
+    const shiki2 = await createHighlighterCore({
       langs,
       themes,
-      loadWasm: () => import("shiki/wasm")
+      engine
     });
     for await (const config of await getConfigs()) {
       await config.shiki?.setup?.(shiki2);
     }
-    return shiki2;
+    return {
+      shiki: shiki2,
+      addClassToHast,
+      isSpecialLang,
+      isSpecialTheme,
+      transformers: [
+        transformerNotationDiff(),
+        transformerNotationErrorLevel(),
+        transformerNotationFocus(),
+        transformerNotationHighlight()
+      ]
+    };
   }
   async function getShiki() {
     if (!shiki) {
@@ -39,22 +47,35 @@ export function createShikiHighlighter({
     }
     return configs;
   }
-  const baseTransformers = [
-    transformerNotationDiff(),
-    transformerNotationFocus(),
-    transformerNotationHighlight(),
-    transformerNotationErrorLevel()
-  ];
   const highlighter = async (code, lang, theme, options = {}) => {
-    const shiki2 = await getShiki();
-    const themesObject = typeof theme === "string" ? { default: theme } : theme || {};
+    const {
+      shiki: shiki2,
+      addClassToHast,
+      isSpecialLang,
+      isSpecialTheme,
+      transformers: baseTransformers
+    } = await getShiki();
+    const codeToHastOptions = {
+      defaultColor: false,
+      meta: {
+        __raw: options.meta
+      }
+    };
+    if (lang === "ts-type" || lang === "typescript-type") {
+      lang = "typescript";
+      codeToHastOptions.grammarContextCode = "let a:";
+    } else if (lang === "vue-html" || lang === "vue-template") {
+      lang = "vue";
+      codeToHastOptions.grammarContextCode = "<template>";
+    }
+    const themesObject = { ...typeof theme === "string" ? { default: theme } : theme || {} };
     const loadedThemes = shiki2.getLoadedThemes();
     const loadedLanguages = shiki2.getLoadedLanguages();
     if (typeof lang === "string" && !loadedLanguages.includes(lang) && !isSpecialLang(lang)) {
       if (bundledLangs[lang]) {
         await shiki2.loadLanguage(bundledLangs[lang]);
       } else {
-        if (import.meta.dev) {
+        if (process.dev) {
           console.warn(`[@nuxtjs/mdc] Language "${lang}" is not loaded to the Shiki highlighter, fallback to plain text. Add the language to "mdc.highlight.langs" to fix this.`);
         }
         lang = "text";
@@ -65,7 +86,7 @@ export function createShikiHighlighter({
         if (bundledThemes[theme2]) {
           await shiki2.loadTheme(bundledThemes[theme2]);
         } else {
-          if (import.meta.dev) {
+          if (process.dev) {
             console.warn(`[@nuxtjs/mdc] Theme "${theme2}" is not loaded to the Shiki highlighter. Add the theme to "mdc.highlight.themes" to fix this.`);
           }
           themesObject[color] = "none";
@@ -81,11 +102,8 @@ export function createShikiHighlighter({
     }
     const root = shiki2.codeToHast(code.trimEnd(), {
       lang,
+      ...codeToHastOptions,
       themes: themesObject,
-      defaultColor: false,
-      meta: {
-        __raw: options.meta
-      },
       transformers: [
         ...transformers,
         {
@@ -185,5 +203,6 @@ const bundledThemes = {
 "github-dark": () => import('shiki/themes/github-dark.mjs').then(r => r.default),
 }
 const options = {"theme":"github-dark"}
-const highlighter = createShikiHighlighter({ bundledLangs, bundledThemes, options, getMdcConfigs })
+const engine = createWasmOnigEngine(() => import('shiki/wasm'))
+const highlighter = createShikiHighlighter({ bundledLangs, bundledThemes, options, getMdcConfigs, engine })
 export default highlighter

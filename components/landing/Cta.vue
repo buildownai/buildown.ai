@@ -7,12 +7,12 @@
       Unlock the secrets of AI and Large Language Models (LLMs) to create revolutionary solutions with cutting-edge technology
     </p>
     <div class="flex mt-5">
-      <LandingLink href="/book/buy" styleName="inverted">Buy Now</LandingLink>
+      <LandingLink href="/buy" styleName="inverted">Buy Now</LandingLink>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 @keyframes animate-fade-scale-in {
     from {
         opacity: 0;

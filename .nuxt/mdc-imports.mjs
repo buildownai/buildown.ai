@@ -1,4 +1,4 @@
-import _Highlight from '/Users/sebastianwessel/projekte/buildown_ai/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype-nuxt.mjs'
+import _Highlight from '/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype-nuxt.js'
 
 export const remarkPlugins = {
 }

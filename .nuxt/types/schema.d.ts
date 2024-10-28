@@ -1,18 +1,214 @@
-import { NuxtModule, RuntimeConfig } from 'nuxt/schema'
-declare module 'nuxt/schema' {
+import { NuxtModule, RuntimeConfig } from '@nuxt/schema'
+declare module '@nuxt/schema' {
+  interface NuxtOptions {
+    /**
+     * Configuration for `nuxt-icon`
+     */
+    ["icon"]: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/mdc`
+     */
+    ["mdc"]: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxt/content`
+     */
+    ["content"]: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module`
+     */
+    ["site"]: typeof import("/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/sitemap`
+     */
+    ["sitemap"]: typeof import("@nuxtjs/sitemap").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/tailwindcss`
+     */
+    ["tailwindcss"]: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `nuxt-simple-robots`
+     */
+    ["robots"]: typeof import("nuxt-simple-robots").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `nuxt-link-checker`
+     */
+    ["linkChecker"]: typeof import("nuxt-link-checker").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/turnstile`
+     */
+    ["turnstile"]: typeof import("@nuxtjs/turnstile").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxt/devtools`
+     */
+    ["devtools"]: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxt/telemetry`
+     */
+    ["telemetry"]: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? O : Record<string, any>
+  }
   interface NuxtConfig {
+    /**
+     * Configuration for `nuxt-icon`
+     */
     ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/mdc`
+     */
     ["mdc"]?: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxt/content`
+     */
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["site"]?: typeof import("/Users/sebastianwessel/projekte/buildown_ai/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module`
+     */
+    ["site"]?: typeof import("/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/sitemap`
+     */
     ["sitemap"]?: typeof import("@nuxtjs/sitemap").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/tailwindcss`
+     */
     ["tailwindcss"]?: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `nuxt-simple-robots`
+     */
     ["robots"]?: typeof import("nuxt-simple-robots").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `nuxt-link-checker`
+     */
     ["linkChecker"]?: typeof import("nuxt-link-checker").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/turnstile`
+     */
     ["turnstile"]?: typeof import("@nuxtjs/turnstile").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxt/devtools`
+     */
     ["devtools"]?: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxt/telemetry`
+     */
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["/Users/sebastianwessel/projekte/buildown_ai/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["nuxt-simple-robots", Exclude<NuxtConfig["robots"], boolean>] | ["nuxt-link-checker", Exclude<NuxtConfig["linkChecker"], boolean>] | ["@nuxtjs/turnstile", Exclude<NuxtConfig["turnstile"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["nuxt-simple-robots", Exclude<NuxtConfig["robots"], boolean>] | ["nuxt-link-checker", Exclude<NuxtConfig["linkChecker"], boolean>] | ["@nuxtjs/turnstile", Exclude<NuxtConfig["turnstile"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+  }
+}
+declare module 'nuxt/schema' {
+  interface NuxtOptions {
+    /**
+     * Configuration for `nuxt-icon`
+     * @see https://www.npmjs.com/package/nuxt-icon
+     */
+    ["icon"]: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/mdc`
+     * @see https://www.npmjs.com/package/@nuxtjs/mdc
+     */
+    ["mdc"]: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxt/content`
+     * @see https://www.npmjs.com/package/@nuxt/content
+     */
+    ["content"]: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module`
+     * @see https://www.npmjs.com/package//Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module
+     */
+    ["site"]: typeof import("/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/sitemap`
+     * @see https://www.npmjs.com/package/@nuxtjs/sitemap
+     */
+    ["sitemap"]: typeof import("@nuxtjs/sitemap").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/tailwindcss`
+     * @see https://www.npmjs.com/package/@nuxtjs/tailwindcss
+     */
+    ["tailwindcss"]: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `nuxt-simple-robots`
+     * @see https://www.npmjs.com/package/nuxt-simple-robots
+     */
+    ["robots"]: typeof import("nuxt-simple-robots").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `nuxt-link-checker`
+     * @see https://www.npmjs.com/package/nuxt-link-checker
+     */
+    ["linkChecker"]: typeof import("nuxt-link-checker").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/turnstile`
+     * @see https://www.npmjs.com/package/@nuxtjs/turnstile
+     */
+    ["turnstile"]: typeof import("@nuxtjs/turnstile").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxt/devtools`
+     * @see https://www.npmjs.com/package/@nuxt/devtools
+     */
+    ["devtools"]: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? O : Record<string, any>
+    /**
+     * Configuration for `@nuxt/telemetry`
+     * @see https://www.npmjs.com/package/@nuxt/telemetry
+     */
+    ["telemetry"]: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? O : Record<string, any>
+  }
+  interface NuxtConfig {
+    /**
+     * Configuration for `nuxt-icon`
+     * @see https://www.npmjs.com/package/nuxt-icon
+     */
+    ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/mdc`
+     * @see https://www.npmjs.com/package/@nuxtjs/mdc
+     */
+    ["mdc"]?: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxt/content`
+     * @see https://www.npmjs.com/package/@nuxt/content
+     */
+    ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module`
+     * @see https://www.npmjs.com/package//Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module
+     */
+    ["site"]?: typeof import("/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/sitemap`
+     * @see https://www.npmjs.com/package/@nuxtjs/sitemap
+     */
+    ["sitemap"]?: typeof import("@nuxtjs/sitemap").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/tailwindcss`
+     * @see https://www.npmjs.com/package/@nuxtjs/tailwindcss
+     */
+    ["tailwindcss"]?: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `nuxt-simple-robots`
+     * @see https://www.npmjs.com/package/nuxt-simple-robots
+     */
+    ["robots"]?: typeof import("nuxt-simple-robots").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `nuxt-link-checker`
+     * @see https://www.npmjs.com/package/nuxt-link-checker
+     */
+    ["linkChecker"]?: typeof import("nuxt-link-checker").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxtjs/turnstile`
+     * @see https://www.npmjs.com/package/@nuxtjs/turnstile
+     */
+    ["turnstile"]?: typeof import("@nuxtjs/turnstile").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxt/devtools`
+     * @see https://www.npmjs.com/package/@nuxt/devtools
+     */
+    ["devtools"]?: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    /**
+     * Configuration for `@nuxt/telemetry`
+     * @see https://www.npmjs.com/package/@nuxt/telemetry
+     */
+    ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    modules?: (undefined | null | false | NuxtModule<any> | string | [NuxtModule | string, Record<string, any>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["/Users/sebastianwessel/projekte/@buildownai/buildown_ai/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["@nuxtjs/sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["nuxt-simple-robots", Exclude<NuxtConfig["robots"], boolean>] | ["nuxt-link-checker", Exclude<NuxtConfig["linkChecker"], boolean>] | ["@nuxtjs/turnstile", Exclude<NuxtConfig["turnstile"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    turnstile: {
@@ -20,11 +216,17 @@ declare module 'nuxt/schema' {
    },
 
    app: {
+      buildId: string,
+
       baseURL: string,
 
       buildAssetsDir: string,
 
       cdnURL: string,
+   },
+
+   nitro: {
+      envPrefix: string,
    },
 
    content: {
@@ -66,6 +268,8 @@ declare module 'nuxt/schema' {
          theme: string,
 
          highlighter: string,
+
+         shikiEngine: string,
 
          langs: Array<string>,
       },
@@ -214,6 +418,8 @@ declare module 'nuxt/schema' {
 
       discoverImages: boolean,
 
+      discoverVideos: boolean,
+
       isNuxtContentDocumentDriven: boolean,
 
       xsl: string,
@@ -253,6 +459,28 @@ declare module 'nuxt/schema' {
       version: string,
 
       debug: boolean,
+   },
+
+   "nuxt-robots": {
+      version: string,
+
+      usingNuxtContent: boolean,
+
+      debug: boolean,
+
+      credits: boolean,
+
+      groups: Array<{
+
+      }>,
+
+      sitemap: Array<string>,
+
+      robotsEnabledValue: string,
+
+      robotsDisabledValue: string,
+
+      cacheControl: string,
    },
 
    "nuxt-simple-robots": {
@@ -433,6 +661,8 @@ declare module 'nuxt/schema' {
          theme: string,
 
          highlighter: string,
+
+         shikiEngine: string,
 
          langs: Array<string>,
       },

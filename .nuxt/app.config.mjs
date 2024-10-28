@@ -3,9 +3,7 @@ import { updateAppConfig } from '#app/config'
 import { defuFn } from 'defu'
 
 const inlineConfig = {
-  "nuxt": {
-    "buildId": "dev"
-  }
+  "nuxt": {}
 }
 
 // Vite - webpack is handled directly in #app/config
@@ -15,6 +13,6 @@ if (import.meta.hot) {
   })
 }
 
-import cfg0 from "/Users/sebastianwessel/projekte/buildown_ai/app.config.ts"
+import cfg0 from "/Users/sebastianwessel/projekte/@buildownai/buildown_ai/app.config.ts"
 
 export default /*@__PURE__*/ defuFn(cfg0, inlineConfig)

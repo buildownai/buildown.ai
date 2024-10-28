@@ -61,6 +61,9 @@ export default defineNuxtConfig({
     siteKey: "0x4AAAAAAAcEaS8rsdqoEkpm",
     addValidateEndpoint: true,
   },
+  robots: {
+    disallow: ["/api", "_nuxt", "/imprint", "/cdn-cgi"],
+  },
 
   runtimeConfig: {
     turnstile: {

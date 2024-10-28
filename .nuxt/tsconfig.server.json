@@ -2,6 +2,7 @@
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noEmit": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -49,14 +50,17 @@
       "@unhead/vue": [
         "../node_modules/@unhead/vue"
       ],
+      "@nuxt/devtools": [
+        "../node_modules/@nuxt/devtools"
+      ],
       "@vue/runtime-core": [
         "../node_modules/@vue/runtime-core"
       ],
       "@vue/compiler-sfc": [
         "../node_modules/@vue/compiler-sfc"
       ],
-      "@vue/runtime-dom": [
-        "../node_modules/@vue/runtime-dom"
+      "unplugin-vue-router/client": [
+        "../node_modules/unplugin-vue-router/client"
       ],
       "@nuxt/schema": [
         "../node_modules/@nuxt/schema"
@@ -106,6 +110,9 @@
       "#sitemap": [
         "../node_modules/@nuxtjs/sitemap/dist/runtime/types"
       ],
+      "#vue-router": [
+        "./vue-router"
+      ],
       "#tailwind-config": [
         "./tailwind.config"
       ],
@@ -124,10 +131,27 @@
       "#internal/nuxt-simple-robots/*": [
         "../node_modules/nuxt-simple-robots/dist/runtime/nitro/composables/*"
       ],
+      "#internal/nuxt-robots": [
+        "../node_modules/nuxt-simple-robots/dist/runtime/nitro/composables"
+      ],
+      "#internal/nuxt-robots/*": [
+        "../node_modules/nuxt-simple-robots/dist/runtime/nitro/composables/*"
+      ],
+      "#link-checker/pure": [
+        "../node_modules/nuxt-link-checker/dist/runtime/pure"
+      ],
+      "#link-checker/pure/*": [
+        "../node_modules/nuxt-link-checker/dist/runtime/pure/*"
+      ],
       "#content/server": [
         "../node_modules/@nuxt/content/dist/runtime/legacy/server"
       ]
-    }
+    },
+    "lib": [
+      "esnext",
+      "webworker",
+      "dom.iterable"
+    ]
   },
   "include": [
     "./types/nitro-nuxt.d.ts",
@@ -145,7 +169,7 @@
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./module/nuxt-site-config.d.ts",
     "./module/@nuxtjs-sitemap.d.ts",
-    "./module/nuxt-simple-robots.d.ts",
+    "./module/nuxt-robots.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"

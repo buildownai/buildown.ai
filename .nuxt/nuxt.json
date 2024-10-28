@@ -1,9 +1,9 @@
 {
-  "_hash": "PFqrdeSrIm",
+  "_hash": "T9vQh0CRsn",
   "project": {
-    "rootDir": "/Users/sebastianwessel/projekte/buildown_ai"
+    "rootDir": "/Users/sebastianwessel/projekte/@buildownai/buildown_ai"
   },
   "versions": {
-    "nuxt": "3.11.2"
+    "nuxt": "3.13.2"
   }
 }
