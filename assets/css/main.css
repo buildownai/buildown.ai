@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes animate-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.fade {
+  animation: animate-fade ease-in both;
+}
+
+@keyframes animate-fade-from-right {
+  from {
+    opacity: 0;
+    transform: translate(25vw, 0px);
+  }
+}
+
+.fade-from-right {
+  animation: animate-fade-from-right ease-in both;
+}
+
+@keyframes animate-fade-from-left {
+  from {
+    opacity: 0;
+    transform: translate(-25vw, 0px);
+  }
+}
+
+.fade-from-left {
+  animation: animate-fade-from-left ease-in both;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-animate {
+    animation-timeline: view();
+    animation-range: 0vh 30vh;
+  }
+}

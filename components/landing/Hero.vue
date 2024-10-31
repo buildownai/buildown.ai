@@ -12,7 +12,7 @@
         <span class="text-blue-800">Build</span> Your Own
         <span class="text-blue-800">AI</span>
       </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      <p class="text-lg mt-4 text-slate-600 max-w-xl text-center">
         Practical Insights for Building Real-World AI Applications:<br/>A Developer’s Guide for Developers
       </p>
       <LandingWaitlist></LandingWaitlist>
