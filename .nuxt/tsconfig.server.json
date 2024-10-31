@@ -114,10 +114,7 @@
         "./vue-router"
       ],
       "#tailwind-config": [
-        "./tailwind.config"
-      ],
-      "#tailwind-config/*": [
-        "./tailwind.config/*"
+        "./tailwind"
       ],
       "#internal/nuxt-site-config": [
         "../node_modules/nuxt-site-config/dist/runtime/nitro/composables"

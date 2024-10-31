@@ -2,7 +2,7 @@
   <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
     <div class="p-24 md:order-1 hidden md:block">
       <div class="hover-animate">
-        <img class="fly-in" src="~/assets/img/hero.png" alt="Build Your Own AI Book" loading="eager" width="512"
+        <img class="fly-in" src="~/assets/img/hero2.png" alt="Build Your Own AI Book" loading="eager" width="512"
           height="512" />
       </div>
     </div>

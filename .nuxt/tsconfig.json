@@ -84,16 +84,16 @@
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#icon-collections": [
-        "./icon-collections"
+        "./icon-collections.mjs"
       ],
       "#mdc-configs": [
-        "./mdc-configs"
+        "./mdc-configs.mjs"
       ],
       "#mdc-highlighter": [
-        "./mdc-highlighter"
+        "./mdc-highlighter.mjs"
       ],
       "#mdc-imports": [
-        "./mdc-imports"
+        "./mdc-imports.mjs"
       ],
       "#sitemap": [
         "../node_modules/@nuxtjs/sitemap/dist/runtime/types"
@@ -107,11 +107,8 @@
       "#tailwind-config": [
         "./tailwind.config"
       ],
-      "#tailwind-config/*": [
-        "./tailwind.config/*"
-      ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/dev.json"
       ],
       "#build": [
         "."
