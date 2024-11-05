@@ -44,7 +44,7 @@ const nextPage = computed(() => {
                 {{ doc.title }}
               </h1>
               <ContentRenderer :value="doc" />
-              <LandingCta></LandingCta>
+              <LandingWaitlist />
             </template>
             <template #not-found>
               <LandingNotfound></LandingNotfound>

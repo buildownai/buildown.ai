@@ -10,7 +10,7 @@ definePageMeta({
             <LandingSectionhead>
                 <template v-slot:title>Get The Book</template>
                 <template v-slot:desc
-                    >Buy the book directly from the author or at your preffered
+                    >Buy the book directly from the author or at your preferred
                     book shop.</template
                 >
             </LandingSectionhead>
