@@ -1,21 +1,18 @@
 ---
 title: File System Tools
-description: Learn how to build tools that allow your AI assistant to interact with files and directories in a code repository.
+description: Learn how to develop tools for accessing files in your code repository, including getting folder structures, reading file content, checking file existence, and more.
 keywords:
-  - file system
-  - folder structure
-  - read file content
-  - write functions
+  - AI development
+  - file system access
+  - code repositories
 ---
 
-Welcome to the chapter on building file system tools for your AI! In this part, you'll discover how to equip your AI with the ability to navigate through folders and files within a codebase. We’ll cover creating tools that can retrieve the directory structure, read file contents, and even check if a file exists.
+In this chapter, you'll dive into the world of building practical tools that help an AI interact with a codebase. Imagine your AI being able to navigate through files and folders like a pro! We’ll start by creating a tool that lets your AI explore the file structure, including subfolders, while ignoring unnecessary files such as binary images or hidden configuration files.
 
-You'll start by crafting a tool that lets your AI explore directories and list their contents in a user-friendly way. This includes filtering out unnecessary files like binary data or hidden system folders to keep things clean and focused on what's important.
+Next up, we'll tackle reading file content. This is crucial for answering questions accurately based on what's inside those files. You'll learn how to return file contents in a way that’s easy for the AI to understand and use effectively.
 
-Next up is reading the content of specific files, which is crucial for answering questions accurately based on the codebase. You'll learn how to format this information neatly so that it’s easy for your AI to understand and present back to users.
+Then, you’ll explore writing functions, but with a twist! We’ll discuss why directly creating or modifying files might not be such a great idea after all. Instead, we’ll shift towards giving users more control over their code changes, making your AI application feel more like an integrated development environment (IDE).
 
-While writing functions might seem like a good idea at first, you’ll see why directly manipulating files through an AI can lead to unintended consequences. Instead of implementing these risky features, we’ll explore ways to enhance user control over file operations in a safer manner.
+Lastly, we'll look at checking if a file exists before trying to read it. This ensures that the AI always has the most up-to-date information and avoids unnecessary errors.
 
-Lastly, you'll find out how checking for the existence of files can be integrated into your existing read file tool, making it more versatile and reliable.
-
-Join me as we dive deeper into each section and build powerful tools that make interacting with code repositories through an AI both efficient and enjoyable.
+Ready to make your AI smarter about handling files? Let's get started!

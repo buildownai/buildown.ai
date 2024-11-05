@@ -3,19 +3,17 @@ title: Lost Control
 description: Explore the challenges of maintaining control over AI language models, including unpredictable behavior and difficulties in ensuring desired outcomes.
 keywords:
   - AI language models
-  - model control
-  - system prompts
+  - model behavior
   - tool calls
+  - system prompts
 ---
 
-Welcome to the chapter where we delve into the complexities of controlling AI language models. In this part, you'll discover how these sophisticated tools can sometimes feel like they're running the show instead of us. We'll uncover why it's so tricky to predict their behavior and ensure that they deliver exactly what we want.
+Welcome to the chapter where we dive into the tricky world of losing control when working with AI language models. You'll discover how these models can sometimes behave unpredictably, making it hard to predict their actions and ensure they deliver what you expect.
 
-We start by examining the root cause behind this loss of control. You’ll learn about the critical role played by system prompts and model configurations, such as size and temperature settings, in shaping how these models respond. Understanding these factors is key to grasping why certain behaviors emerge.
+In this part, we’ll uncover why these issues occur by examining how model definitions are integrated into system prompts. We’ll also look at the impact of different model sizes and settings on their ability to understand instructions and provide accurate responses.
 
-Next, you'll join us on an experimental journey where we test different models under various conditions. We'll look closely at how models like Qwen 2.4 3B and Llama 3.2 3B handle prompts and tool calls, revealing fascinating insights into their decision-making processes.
+We'll conduct experiments with various models like Qwen 2.4 3B and Llama 3.2 3B, observing how they handle specific tasks and questions related to a TypeScript-based backend framework called PURISTA. You’ll see patterns in how these models interact with tools and generate answers, revealing insights into their decision-making processes.
 
-As we dig deeper, we’ll explore the concept of "Exponential Cascading Inaccuracies," a phenomenon where small inaccuracies in responses can lead to increasingly flawed outcomes over time. This understanding is crucial for anyone working with AI models in real-world applications.
+Understanding the behavior of AI language models is crucial for building reliable applications. We'll discuss the phenomenon known as "Exponential Cascading Inaccuracies," where small inaccuracies can lead to significant errors over time, especially in smaller models. This chapter will equip you with knowledge on how to test and evaluate models effectively, ensuring they meet your requirements.
 
-Finally, you'll see how using larger and more capable models like Qwen 2.5 14B can help mitigate these issues while still delivering high-quality results.
-
-Join us as we unravel the mysteries of controlling AI language models and learn valuable lessons that will enhance your ability to work with them effectively.
+Join us as we explore these fascinating challenges and learn how to navigate them successfully!

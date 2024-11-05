@@ -2,17 +2,18 @@
 title: Improving the Retrieval
 description: Learn how to enhance your knowledgebase by fixing embeddings and merging chunks for better context clarity.
 keywords:
-  - retrieval improvement
-  - embeddings correction
-  - chunk merging
+  - embeddings
+  - retrieval
+  - language models
+  - knowledgebase
 ---
 
-In this chapter, you'll dive into refining your AI's knowledgebase to ensure it delivers accurate and relevant answers. We start by addressing the issues in our current approach, such as incorrect data usage and embedding methods. You’ll learn how to correct these mistakes by following a systematic process of identifying problems and implementing fixes.
+In this chapter, you'll dive into refining your AI application's performance. You’ll start by addressing the messy data issue in your knowledgebase, where chunks from different documents are mixed up and not always relevant to user queries.
 
-Next, we focus on improving embeddings by adhering to best practices outlined in documentation. This involves modifying your code to include task instructions for both documents and user queries, ensuring the language model understands the context better.
+Firstly, we tackle incorrect embeddings by ensuring that each chunk is properly labeled as either a document or a query. This simple fix significantly improves how the language model interprets and responds to questions.
 
-Then, you'll tackle the challenge of merging chunks to create a more coherent and structured context. By grouping related information and including headlines, we make it easier for the AI to provide precise answers.
+Next, you'll learn to merge these scattered chunks into a more coherent structure before feeding them to your AI. By organizing data based on file names and headlines, you’ll provide clearer context for the model, leading to better answers.
 
-Finally, we validate these improvements by testing various questions and observing how the quality of responses has changed. We also discuss the limitations of our current dataset and the importance of having a well-structured fact database or FAQ set to further enhance your AI's performance.
+Throughout this chapter, we also explore ways to validate improvements through various user queries, highlighting how adjustments in embeddings and chunk organization can dramatically enhance response accuracy. However, it's important to recognize that even with these enhancements, your dataset might still be lacking if it’s not structured specifically for question-answering tasks.
 
-Join us as we take your AI application from good to great with these essential refinements!
+Join us as we delve into the intricacies of improving retrieval systems and discover practical steps to elevate your AI application's performance!

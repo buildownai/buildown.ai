@@ -1,6 +1,6 @@
 ---
 title: OpenAI Compatible API
-description: Learn how to migrate your existing codebase from Ollama's API to an OpenAI-compatible API, making it more flexible and future-proof.
+description: Learn how to migrate your AI application from Ollama's API to an OpenAI-compatible API for better flexibility and future-proofing.
 keywords:
 - OpenAI API
 - Ollama API
@@ -8,10 +8,8 @@ keywords:
 - JavaScript library
 ---
 
-# OpenAI Compatible API
+In this chapter, you'll discover the benefits of switching your AI application from using Ollama’s API to a more flexible and widely supported OpenAI-compatible API. This change will allow you to easily switch between different providers in the future and take advantage of numerous third-party tools that work seamlessly with OpenAI's API.
 
-In this chapter, you'll discover the benefits of switching your project from using Ollama’s API to a more versatile OpenAI-compatible API. This change will not only future-proof your application but also allow for greater flexibility and compatibility with various third-party tools.
+We’ll guide you through updating your existing code to use the official `openai` JavaScript library, which offers better TypeScript type support for cleaner and more maintainable code. You'll learn how to migrate both embedding functions and chat endpoints by making minimal changes to your current setup.
 
-We’ll guide you through updating your codebase to use the official `openai` JavaScript library, which offers improved TypeScript type support and simplifies maintenance. You'll learn how to modify functions like `createEmbeddings`, ensuring they work seamlessly with the new API while keeping your existing logic intact.
-
-Additionally, we'll walk you through migrating your chat endpoint from using native fetch calls to leveraging the OpenAI client for a cleaner and more robust implementation. By following this chapter, you’ll be able to enhance your project’s capabilities and adaptability effortlessly. Dive in and see how easy it is to make these changes!
+By following this chapter, you will be able to enhance your application's capabilities while ensuring it remains adaptable to future developments in the AI landscape. Dive into the details of setting up the OpenAI client with essential configurations like `baseURL` and `apiKey`, and see how these adjustments can streamline your development process.

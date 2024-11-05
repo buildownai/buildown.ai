@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
     title: "BuildOwn.AI",
-    meta: [{ name: "description", content: "Learn how to build your own GPT-like AI and keep the understanding how large language models, RAG and function calling are working" }],
+  meta: [{ name: "description", content: "Learn how to build your own Real-World AI Applications and keep the understanding how large language models, RAG, tool calling and agents are working" }],
     bodyAttrs: {
         class: "test",
     },
@@ -10,18 +10,18 @@ useHead({
 useSeoMeta({
     author:"Sebastian Wessel",
     copyright:`Copyright © ${ new Date().getFullYear() } Sebastian Wessel`,
-    title: "Build Your Own GPT-like AI",
-    ogTitle: "Build Your Own GPT-like AI",
-    description: "Learn how to build your own GPT-like AI and keep the understanding how large language models, RAG and function calling are working.",
-    ogDescription: "Learn how to build your own GPT-like AI and keep the understanding how large language models, RAG and function calling are working.",
+    title: "Build Your Own AI",
+    ogTitle: "Build Your Own AI",
+    description: "The Developers’s Guide to Build Real-World AI Applications",
+    ogDescription: "The Developers’s Guide to Build Real-World AI Applications",
     ogImage: "https://buildown.ai/og.jpg",
     twitterImage: "https://buildown.ai/og.jpg",
-    twitterImageAlt: "Build Your Own GPT-like AI",
+    twitterImageAlt: "Build Your Own AI",
     twitterCard: "summary_large_image",
     twitterSite: "@buildownai",
     twitterCreator: "@swessel78",
     bookAuthor:"Sebatian Wessel",
-    bookTag:["ai","llm","large language model","gpt","guide","tutorial","programming","typescript","llama","chat","bot"]
+    bookTag:["ai","llm","large language model","gpt","guide","tutorial","programming","typescript","llama","chat","bot","guide","development"]
 });
 </script>
 

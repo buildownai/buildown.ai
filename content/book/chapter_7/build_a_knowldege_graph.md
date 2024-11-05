@@ -1,6 +1,6 @@
 ---
 title: Build a Knowledge Graph
-description: Learn how to construct a knowledge graph by extracting entities and relationships from text using a language model.
+description: Learn how to build a knowledge graph by extracting entities and relationships from text using a language model.
 keywords:
   - knowledge graph
   - entity extraction
@@ -9,10 +9,12 @@ keywords:
   - language models
 ---
 
-In this chapter, you'll dive into the fascinating world of building a knowledge graph. We’ll explore how to represent information as interconnected entities and relationships, which can be incredibly useful for tasks like answering questions or making recommendations.
+In this chapter, you will learn the exciting process of building a knowledge graph. A knowledge graph is like a web of interconnected ideas where each idea (or entity) has its own unique identity and relationships with other ideas.
 
-You'll learn how to use a language model to automatically extract entities from text, storing them as nodes in your graph with unique identifiers, names, and descriptions. Additionally, you'll discover how to capture the relationships between these entities as edges, detailing their types and descriptions.
+We'll start by using a powerful tool called a language model to automatically find and extract entities from text. These entities are then stored as nodes in our graph, complete with their unique identifiers, names, and descriptions. The connections between these entities, known as relationships or edges, will also be captured and described.
 
-We’ll walk through the process of extracting entities and relations using a generic approach that can handle various types of entities without needing detailed instructions for each one. You'll also see how to store this information in SurrealDB, taking advantage of its schemaless data modeling capabilities to easily manage nodes (entities) and edges (relationships).
+The chapter dives into the technical details of how this extraction happens, including a system prompt that guides the language model on what to look for when analyzing text. You'll see examples of how to format your requests to the language model and handle its responses using JSON schemas.
 
-By the end of this chapter, you’ll have a solid understanding of how to build a knowledge graph that provides context and enhances the language model's ability to answer questions accurately. Dive in and see how powerful these graphs can be!
+Next, we’ll explore storing these entities and relationships in SurrealDB, a flexible database designed for handling graph data. We will walk through creating nodes (entities) and edges (relationships), ensuring that our knowledge graph is robust and ready for use.
+
+By the end of this chapter, you'll have a solid understanding of how to build your own knowledge graph from scratch, opening up possibilities for applications like intelligent question answering systems or recommendation engines. Dive in and discover the power of interconnected data!

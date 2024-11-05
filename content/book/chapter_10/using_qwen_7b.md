@@ -1,21 +1,14 @@
 ---
 title: Evaluating Qwen Coder 7b
-description: This chapter evaluates the performance of the Qwen Coder 7B model with different temperature settings for data generation and retrieval tasks.
+description: This chapter evaluates the performance of the Qwen Coder 7B model with different settings.
 keywords:
 - Qwen Coder 7B
 - Model Evaluation
 - Temperature Settings
-- Data Generation
-- Query Results
 ---
 
-In this chapter, you'll dive into the fascinating world of evaluating a custom AI model based on **Qwen Coder 7B**. We’ll explore how adjusting the temperature parameter influences the quality and naturalness of generated data and query results.
+In this chapter, you will explore how to fine-tune and evaluate the Qwen Coder 7B model by adjusting its temperature setting. You'll learn about creating a custom Docker image for your AI model and testing it with different configurations. We’ll dive into two scenarios: one where the temperature is set very low (0.01) and another where it’s set to a higher value (1). 
 
-You will learn about:
+You will see how these settings affect data generation, query results, and overall performance. The chapter includes detailed tables comparing the outcomes of each scenario, helping you understand which setting works best for your specific use case.
 
-1. **Creating Custom Models**: Discover how to build your own version of Qwen Coder 7B with a larger context size, using Docker and Ollama commands.
-2. **Temperature Settings**: Understand the impact of setting the model's temperature to both low (0.01) and high (1) values during evaluation.
-3. **Data Generation**: See how different temperatures affect the creation of question-answer pairs and graph generation processes.
-4. **Query Results Analysis**: Examine tables comparing query results across various versions, highlighting accuracy and naturalness.
-
-Join us as we uncover the nuances of model performance tuning and gain insights into making your AI creations more effective and user-friendly!
+By reading this chapter, you'll gain insights into optimizing AI models for better accuracy and naturalness in responses. So, if you're curious about how to tweak your model settings for optimal results, keep reading!

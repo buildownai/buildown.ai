@@ -1,7 +1,7 @@
 ---
 title: Fixing Our Application
 description: Evaluating the suitability of our current AI model and identifying potential improvements.
-keywords: AI model evaluation, model parameters, quantization levels, context size, RAG data generation
+keywords: AI application, model evaluation, parameter count, quantization, context size, RAG data generation
 ---
 
-In this chapter, we embark on a journey to assess and improve our application's performance. We'll dive into understanding why the `qwen2.5-coder:1.5b` model might not be the best fit for certain tasks like data extraction and RAG data generation. By examining key properties such as context size, parameter count, and quantization level, we will uncover how these factors influence our model's capabilities. Get ready to learn how to choose a more suitable AI model that can handle larger datasets with greater precision and efficiency!
+In this chapter, we dive into evaluating the performance of our existing AI model. We'll take a closer look at the `qwen2.5-coder:1.5b` model and assess its capabilities based on key metrics like context size, parameter count, and quantization level. Understanding these factors is crucial for determining if our current model is up to the task or if we need to consider alternatives with better performance in data extraction and RAG data generation. Join us as we explore how to make informed decisions about upgrading our AI application!

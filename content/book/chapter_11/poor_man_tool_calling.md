@@ -2,19 +2,17 @@
 title: Poor Man's Tool-Calling
 description: Learn how to create a simple web server that interacts with an AI model to generate function parameters and call functions based on user input.
 keywords:
-  - web server
-  - endpoint
-  - language model
-  - JSON response
-  - callable functions
+  - AI development
+  - TypeScript backend
+  - Web server
+  - Language models
+  - Function calling
 ---
 
-In this chapter, you'll dive into the world of building a basic yet functional web server that leverages existing codebases and AI models to process user queries. You’ll start by setting up an endpoint in your web server that accepts user input and uses it to generate parameters for specific functions through an AI model.
+In this chapter, you'll dive into the world of building a basic yet functional web application that leverages artificial intelligence. You’ll start by setting up a simple web server with an endpoint to receive user queries and send them to a language model for processing. The goal is to generate function parameters from these queries and then call specific functions based on those parameters.
 
-The journey begins with creating a simple UI where users can submit their questions, which are then sent to the server's endpoint. The server interacts with a language model to produce JSON responses containing detailed instructions on how to proceed with your application’s functionality. This process involves breaking down complex user queries into manageable tasks by generating precise function parameters.
+You'll begin by creating the initial setup of your web server, including a basic UI where users can input their questions. When a query is submitted, it's sent to an AI model that generates JSON responses containing the necessary parameters for your application’s functions. These parameters are used to invoke different functions within your codebase, which then process the data and return results back to the user.
 
-Next, you'll learn how to factor out these generated parameters into callable functions within your codebase. Each function will be responsible for executing specific actions based on the input received from the AI model. The results of these functions are then fed back into the language model to refine and finalize the response before sending it back to the user.
+The chapter guides you through each step of this process, from setting up the server endpoint to calling out to a language model and handling function calls based on the generated parameters. You'll see how to structure your application to handle these interactions efficiently and effectively.
 
-By following this chapter, you'll gain hands-on experience in integrating AI models with your web applications, enhancing their capabilities without requiring extensive coding knowledge or complex infrastructure. This approach not only simplifies development but also opens up new possibilities for creating intelligent, interactive interfaces that can adapt and evolve based on user needs.
-
-Ready to see how a simple setup can unlock powerful interactions? Dive into the details of setting up endpoints, calling functions, and refining responses with AI models!
+By the end of this section, you’ll have a working prototype that demonstrates the power of integrating AI into your web applications for dynamic and intelligent responses. This is just the beginning; once you understand the basics, you can expand on this foundation to build more complex and sophisticated systems.

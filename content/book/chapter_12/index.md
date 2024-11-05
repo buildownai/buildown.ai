@@ -1,18 +1,16 @@
 ---
 title: Build Your Own AI IDE
-description: Learn how to develop your own AI-powered Integrated Development Environment (IDE) from scratch.
+description: Learn how to develop your own AI-powered Integrated Development Environment (IDE) that includes features like chat functionality, code autocompletion, and syntax highlighting.
 keywords:
   - AI IDE
   - Buddy project
   - VS Code plugins
   - Ollama backend
-  - Qwen model
+  - SurrealDB database
 ---
 
-Welcome to the exciting world of building an AI-driven Integrated Development Environment (IDE)! In this chapter, you'll embark on a journey to create **Buddy**, your very own proof-of-concept IDE that integrates seamlessly with AI capabilities. Imagine having a chatbot right within your code editor, ready to assist you in navigating files, writing custom snippets, and even providing intelligent autocompletion.
+Welcome to the exciting world of building your very own AI-powered Integrated Development Environment (IDE)! In this chapter, you'll dive into creating a proof-of-concept application called **Buddy**. This IDE will feature an interactive chat pane where you can converse with an AI about your project or repository, and it will also include advanced features like code autocompletion and syntax highlighting for various programming languages.
 
-We’ll dive into the technical aspects of setting up an environment using modern tools like Bun for runtime management, Biome for linting and formatting, and SurrealDB as our database. On the frontend side, we'll use Vue to build a clean and structured interface with Tailwind CSS for styling. Our AI backend will be powered by Ollama and the Qwen 2.5 14b model.
+You’ll be using a range of cutting-edge technologies such as Bun, Biome, SurrealDB, Hono, Vue, Tailwind CSS, Ollama, Qwen 2.5 14b, and the OpenAI Client Library to bring your IDE to life. The project structure is organized into two main packages: `packages/frontend` for the user interface and `packages/backend` for server-side logic.
 
-This chapter is not just about coding; it's about understanding how different technologies can come together to create something innovative and useful. Whether you're familiar with Vue or new to frontend frameworks, this project will guide you through each step of development, from cloning the repository to running your own AI-powered IDE locally.
-
-Ready to dive in? Let’s build Buddy and explore the future of coding!
+By following this guide, you'll not only learn how to set up and run your AI IDE but also gain valuable insights into integrating different tools and frameworks effectively. So roll up your sleeves and get ready to build something truly innovative!

@@ -1,11 +1,19 @@
 ---
 title: Tool-Calling - Enhancing Language Model Capabilities
-description: Learn how to enhance language model capabilities through tool-calling, a method for integrating external data sources and functions into your AI system.
+description: Learn how to enhance language model capabilities through tool-calling, a technique that allows models to access external data sources for more accurate and comprehensive responses.
 keywords: tool-calling, function calling, language models, knowledge graph, question-answer pairs, chat history, external tools, APIs, databases
 ---
 
-Welcome to the exciting world of **Tool-Calling**, where we explore how to make our language models smarter by connecting them with external data sources and functions. In this chapter, you'll discover how tool-calling can streamline information retrieval, making your AI system more flexible and efficient.
+## Tool-Calling: Enhancing Language Model Capabilities
 
-You’ll learn why integrating external tools is crucial for delivering accurate responses without cluttering the chat history. We’ll also delve into the mechanics of implementing tool-calling in your projects, covering everything from basic setup to advanced techniques. By the end of this chapter, you'll be equipped with the knowledge to build robust and versatile AI solutions that can leverage a wide range of external data sources.
+Get ready to unlock the full potential of your language model by learning about **tool-calling**. This chapter will guide you through a powerful technique that enables your model to interact with external data sources like databases and APIs. By doing so, it can provide more accurate and detailed responses than ever before.
 
-Ready to take your language model's capabilities to the next level? Dive into the world of tool-calling and unlock new possibilities for your AI projects!
+### What Do We Want to Achieve?
+
+In this section, we'll explore how tool-calling helps in delivering precise answers by integrating knowledge from various sources without cluttering the chat history. You’ll see how this method keeps your conversations clean and efficient while making your model smarter and more versatile.
+
+### What is Tool-Calling?
+
+Discover what makes **tool-calling** so special as you dive into its mechanics. Understand how to implement functions with specific input and output structures, allowing your language model to call these functions seamlessly. This chapter will also introduce different variations of tool-calling techniques, giving you the flexibility to adapt them according to your needs.
+
+Ready to make your AI applications smarter? Let's get started!

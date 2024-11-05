@@ -1,6 +1,6 @@
 ---
 title: Evaluating Llama 3.2 3B
-description: Explore the evaluation of the custom model `buildownai/llama3b` based on **Llama 3.2 3B** with a focus on its performance at different temperatures.
+description: This chapter explores the evaluation of a custom AI model based on Llama 3.2 3B with various settings and tests.
 keywords:
 - Llama 3.2 3B
 - Custom Model Evaluation
@@ -9,10 +9,8 @@ keywords:
 - Query Results
 ---
 
-In this chapter, you'll dive into the evaluation of our custom AI model `buildownai/llama3b`, which is based on **Llama 3.2 3B** and has a large context size for better performance during inference. We will explore how adjusting the temperature parameter affects the model's output quality and reliability.
+In this chapter, you will dive into evaluating a custom AI model built from the **Llama 3.2 3B** framework. We'll explore how adjusting parameters like temperature can impact the model's performance and reliability when generating responses to specific queries.
 
-You'll learn about setting up the model with specific configurations, such as increasing its attention span to handle more context. Then, we’ll evaluate the model at two different temperatures: **0.01** and **1**, observing how these settings impact data generation and query results.
+You’ll learn about setting up your own custom model with Docker and understand why tweaking settings such as context size is crucial for better results. The chapter also covers testing different scenarios, including data generation and query response accuracy, under varying conditions.
 
-Discover insights into the model's performance in generating precise answers and handling complex queries related to a TypeScript backend framework called PURISTA. We'll also discuss common issues like hallucinations, broken links, and context differentiation challenges that arise at higher temperatures.
-
-Join us as we uncover the nuances of fine-tuning AI models for optimal usability and reliability!
+By the end of this section, you'll have a clearer picture of how to fine-tune AI models to meet specific needs and improve their usability in real-world applications.

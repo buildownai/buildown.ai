@@ -1,17 +1,25 @@
 ---
 title: History Handling
-description: Learn how to manage conversation history effectively in your AI projects by implementing various strategies tailored to different use cases.
+description: Learn how to manage conversation history effectively in your AI applications.
 keywords:
   - conversation history
-  - token management
-  - summarization techniques
-  - RAG approach
+  - managing conversations
+  - context size
+  - token limits
 ---
 
-Welcome to the chapter on *History Handling*, where we dive into the art of managing conversation histories in your AI applications. This section is all about ensuring that your chatbots and assistants can maintain context without overwhelming the model's capacity, especially when dealing with extensive conversations or code generation.
+In this chapter, you'll dive into the world of managing conversation history for your AI applications. We’ll explore why it's crucial and how to handle long conversations without losing important information.
 
-In this part, you'll explore simple yet effective methods like setting a limit on message numbers within a single conversation. You’ll also discover more sophisticated approaches such as compacting history through summarization and leveraging Retrieval-Augmented Generation (RAG) techniques to store and retrieve information efficiently.
+## Simple Solutions
 
-By the end of this chapter, you will be equipped with the knowledge to choose the best strategy for your specific use case, ensuring that your AI applications remain responsive and contextually aware. Whether you're building a chatbot or an advanced code generation tool like *Buddy*, understanding these techniques is crucial for delivering seamless user experiences.
+First up, we look at basic methods like setting a limit on the number of messages in a conversation or keeping only recent messages. These are easy to implement but might not always be practical, especially when users need access to earlier parts of the chat.
 
-Ready to dive in and master conversation history management? Let's get started!
+## Advanced Solutions
+
+Next, you'll discover more sophisticated techniques such as compacting conversation history and using summaries to maintain context efficiently. We’ll also touch on the Retrieval-Augmented Generation (RAG) approach for storing detailed information in a database.
+
+## Choose Per Use Case
+
+Finally, we discuss how to pick the best method based on your specific needs. You'll learn why it's important to start simple and avoid overengineering solutions that might not be necessary.
+
+Ready to make sure your AI conversations stay smooth and effective? Dive into this chapter!

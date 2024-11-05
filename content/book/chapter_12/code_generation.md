@@ -1,17 +1,15 @@
 ---
 title: Code Generation
-description: Learn how to generate code snippets and enhance developer experience through AI-powered tools.
+description: Learn how to generate code snippets and provide intelligent code completion suggestions using AI models in this chapter.
 keywords:
   - code generation
-  - AI assistant
-  - project files
-  - system prompt
+  - code completion
+  - AI models
+  - system prompts
 ---
 
-Welcome to the chapter on Code Generation! Here, you'll discover how to leverage powerful AI models to create useful code snippets for your projects. We’ll explore a detailed system prompt that guides an AI assistant named Buddy in generating accurate and contextually relevant responses based on project files.
+In this chapter, you will discover the magic of generating code snippets and providing smart code completion suggestions. We'll dive into how to use powerful AI models to create useful code snippets that can be directly applied to your project files with just a click.
 
-You will also learn about integrating these generated snippets into your development environment seamlessly. This includes handling various scenarios such as applying changes when the file doesn’t exist, is open but unsaved, or exists elsewhere within your editor tabs. We’ll delve into using a global event pub/sub system to facilitate communication between different components of your application.
+You’ll also learn about enhancing the developer experience by integrating an intelligent autocomplete feature powered by AI. This involves setting up both frontend and backend components, including using tools like CodeMirror 6 for seamless integration. We'll explore different approaches to generating these suggestions, such as using endpoints or chat interfaces, each with its own advantages.
 
-Moreover, we cover enhancing developer productivity with AI-powered code completion suggestions. You'll see how to implement this feature by tracking cursor positions and leveraging the CodeMirror 6 editor along with its copilot plugin for efficient autocomplete functionality. The backend logic involves generating meaningful completions based on context-aware FiM (Fill in the Middle) techniques.
-
-Join us as we dive into these exciting features and learn how to streamline your development workflow using AI-driven tools!
+By the end of this chapter, you’ll have a solid understanding of how to leverage AI models to improve your coding workflow and make development more efficient and enjoyable. So let's dive in and see how we can bring the power of AI into our daily coding tasks!
